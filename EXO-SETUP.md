@@ -6,7 +6,7 @@ This branch sets up the "ExO Example Space – October 2026" example in a shared
 
 | Step | What | Status | Who |
 |---|---|---|---|
-| 1 | Check out the example branch | ✅ Done | Already on this branch (`exo-space-setup`) |
+| 1 | Prepare the example branch | ✅ Done | Branch `exo-space-setup` is ready. You switch to it at the start of step 6 |
 | 2 | `bun install` | ✅ Checked it works | You run it locally as part of step 6 |
 | 3 | Fill in `.env` | ✅ Values listed below | You create your own `.env` as part of step 6 |
 | 4 | Import content into Contentful | ✅ **Done, nothing to do** | – |
@@ -84,10 +84,20 @@ Notes:
 - The `secret` in the URL must match `DRAFT_MODE_SECRET` in your `.env` (step 6).
 
 ### Step 6 – Run the app locally
+First, get the repo and switch to the `exo-space-setup` branch. The default `main` branch doesn't have the right code.
+
 ```bash
-git clone <this repo>
+# New clone
+git clone -b exo-space-setup https://github.com/contentful-labs/cx-simple-exo.git
 cd cx-simple-exo
+
+# …or, if you already have the repo
+git fetch origin
 git checkout exo-space-setup
+```
+
+Then install dependencies and create your `.env`:
+```bash
 bun install
 cp .env.example .env
 ```
