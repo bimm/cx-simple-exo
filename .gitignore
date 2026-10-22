@@ -21,4 +21,7 @@ npm-debug.log*
 # generated Contentful DSI output
 .contentful/
 
+# Contentful CLI import error logs
+contentful-import-error-log-*.json
+
 next-env.d.ts
