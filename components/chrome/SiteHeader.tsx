@@ -26,7 +26,7 @@ export function SiteHeader({
         </div>
       )}
       <div className="flex items-center justify-between px-4 py-3">
-        <Image src="/contentful-logo.svg" alt="Contentful" maxHeight="2rem" />
+        <Image src="/BIMM-Logo-Orange-1.png" alt="BIMM" maxHeight="2rem" />
         <Flex direction="row" spacing="spacing.xs">
           <Button size="sm" label="Home" url="/" />
           <Button size="sm" label="About" url="/about" />
